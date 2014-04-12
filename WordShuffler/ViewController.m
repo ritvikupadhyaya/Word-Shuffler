@@ -33,6 +33,7 @@
         return word;
     }
     
+    return word;
 }
 
 - (IBAction)enshuffle:(UIButton *)sender {
@@ -40,10 +41,10 @@
     NSString *originalText = original.text;
     originalText = original.text;
     NSArray *listwords = [originalText componentsSeparatedByString:@" "];
-    for (int i=0; i<listwords.count; i++) {]
-        listwords[i] = [shuffleWord(listwords[i]);
+    for (int i=0; i<listwords.count; i++) {
+        listwords[i] = shuffleWord(listwords[i]);
     }
-    NSString encodedText;
+    NSString *encodedText;
     shuffled.text = originalText;
 }
 
