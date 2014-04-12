@@ -28,8 +28,10 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)enshuffle:(UIButton *)sender {
- original.text = @"This works";
-    shuffled.text = original.text;
+    NSString *s = original.text;
+    NSArray* foo = [s componentsSeparatedByString: @" "];
+    NSString *ret = [foo objectAtIndex:0];
+    shuffled.text = ret;
 }
 
 @end
