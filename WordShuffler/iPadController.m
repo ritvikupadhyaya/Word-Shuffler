@@ -19,18 +19,26 @@
 
 - (void)viewDidLoad{
     original.text = @"Original";
-    original.textColor = [UIColor lightGrayColor];
+    original.textColor = [UIColor whiteColor];
+    [original setAlpha:0.4];
     original.delegate = self;
     shuffled.text = @"Shuffled";
-    shuffled.textColor = [UIColor lightGrayColor];
+    shuffled.textColor = [UIColor whiteColor];
+    [shuffled setAlpha:0.5];
     shuffled.delegate = self;
     
 }
+
 - (BOOL) textViewShouldBeginEditing:(UITextView *)textView
 {
-    original.text = @"";
-    original.textColor = [UIColor blackColor];
-    shuffled.textColor = [UIColor blackColor];
+    if ([original.text  isEqual: @"Original"]) {
+        original.text = @"";
+        original.textColor = [UIColor whiteColor];
+        [original setAlpha:1.0];
+        shuffled.textColor = [UIColor whiteColor];
+        [shuffled setAlpha:1.0];
+        return YES;
+    }
     return YES;
 }
 
@@ -38,12 +46,12 @@
 {
     
     if(original.text.length == 0){
-        original.textColor = [UIColor lightGrayColor];
-        original.text = @"Comment";
+        original.textColor = [UIColor whiteColor];
+        [original setAlpha:0.4];
+        original.text = @"Original";
         [original resignFirstResponder];
     }
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -77,6 +85,12 @@
     
     UITouch *touch = [[event allTouches] anyObject];
     if ([original isFirstResponder] && ([touch view]!= original)) {
+        [original resignFirstResponder];
+    }
+    if(original.text.length == 0){
+        original.textColor = [UIColor whiteColor];
+        [original setAlpha:0.4];
+        original.text = @"Original";
         [original resignFirstResponder];
     }
     [super touchesBegan:touches withEvent:event];

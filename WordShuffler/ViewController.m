@@ -94,6 +94,12 @@
     if ([original isFirstResponder] && ([touch view]!= original)) {
         [original resignFirstResponder];
     }
+    if(original.text.length == 0){
+        original.textColor = [UIColor whiteColor];
+        [original setAlpha:0.4];
+        original.text = @"Original";
+        [original resignFirstResponder];
+    }
     [super touchesBegan:touches withEvent:event];
 }
 
