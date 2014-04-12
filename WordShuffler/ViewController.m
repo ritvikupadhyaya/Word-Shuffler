@@ -27,9 +27,24 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (*NSString)shuffleWord:(NSString *)word {
+    if (word.length <=2) {
+        return word;
+    }
+    
+}
+
 - (IBAction)enshuffle:(UIButton *)sender {
- original.text = @"This works";
-    shuffled.text = original.text;
+
+    NSString *originalText = original.text;
+    originalText = original.text;
+    NSArray *listwords = [originalText componentsSeparatedByString:@" "];
+    for (int i=0; i<listwords.count; i++) {]
+        listwords[i] = [shuffleWord(listwords[i]);
+    }
+    NSString encodedText;
+    shuffled.text = originalText;
 }
 
 @end
