@@ -9,7 +9,7 @@
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "WSIcon_40x2.png",
+      "filename" : "WSIcon_40*2-1.png",
       "scale" : "2x"
     },
     {
@@ -39,7 +39,7 @@
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "WSIcon_40x2-1.png",
+      "filename" : "WSIcon_40*2.png",
       "scale" : "2x"
     },
     {
@@ -51,7 +51,7 @@
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "WSIcon_76x2.png",
+      "filename" : "WSIcon_76*2.png",
       "scale" : "2x"
     }
   ],
