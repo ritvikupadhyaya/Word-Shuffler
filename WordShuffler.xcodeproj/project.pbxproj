@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C473041C18F8C9BC002C7640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473041B18F8C9BC002C7640 /* Foundation.framework */; };
+		C473041E18F8C9BC002C7640 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473041D18F8C9BC002C7640 /* CoreGraphics.framework */; };
+		C473042018F8C9BC002C7640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473041F18F8C9BC002C7640 /* UIKit.framework */; };
+		C473042618F8C9BC002C7640 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C473042418F8C9BC002C7640 /* InfoPlist.strings */; };
+		C473042818F8C9BC002C7640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C473042718F8C9BC002C7640 /* main.m */; };
+		C473042C18F8C9BC002C7640 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C473042B18F8C9BC002C7640 /* AppDelegate.m */; };
+		C473042F18F8C9BC002C7640 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C473042D18F8C9BC002C7640 /* Main_iPhone.storyboard */; };
+		C473043218F8C9BC002C7640 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C473043018F8C9BC002C7640 /* Main_iPad.storyboard */; };
+		C473043518F8C9BC002C7640 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C473043418F8C9BC002C7640 /* ViewController.m */; };
+		C473043718F8C9BC002C7640 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C473043618F8C9BC002C7640 /* Images.xcassets */; };
+		C473043E18F8C9BC002C7640 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473043D18F8C9BC002C7640 /* XCTest.framework */; };
+		C473043F18F8C9BC002C7640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473041B18F8C9BC002C7640 /* Foundation.framework */; };
+		C473044018F8C9BC002C7640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473041F18F8C9BC002C7640 /* UIKit.framework */; };
+		C473044818F8C9BC002C7640 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C473044618F8C9BC002C7640 /* InfoPlist.strings */; };
+		C473044A18F8C9BC002C7640 /* WordShufflerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C473044918F8C9BC002C7640 /* WordShufflerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C473044118F8C9BC002C7640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C473041018F8C9BC002C7640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C473041718F8C9BC002C7640;
+			remoteInfo = WordShuffler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C473041818F8C9BC002C7640 /* WordShuffler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordShuffler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C473041B18F8C9BC002C7640 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C473041D18F8C9BC002C7640 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C473041F18F8C9BC002C7640 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C473042318F8C9BC002C7640 /* WordShuffler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordShuffler-Info.plist"; sourceTree = "<group>"; };
+		C473042518F8C9BC002C7640 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C473042718F8C9BC002C7640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C473042918F8C9BC002C7640 /* WordShuffler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordShuffler-Prefix.pch"; sourceTree = "<group>"; };
+		C473042A18F8C9BC002C7640 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C473042B18F8C9BC002C7640 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C473042E18F8C9BC002C7640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C473043118F8C9BC002C7640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		C473043318F8C9BC002C7640 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C473043418F8C9BC002C7640 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C473043618F8C9BC002C7640 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C473043C18F8C9BC002C7640 /* WordShufflerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordShufflerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C473043D18F8C9BC002C7640 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C473044518F8C9BC002C7640 /* WordShufflerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordShufflerTests-Info.plist"; sourceTree = "<group>"; };
+		C473044718F8C9BC002C7640 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C473044918F8C9BC002C7640 /* WordShufflerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordShufflerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C473041518F8C9BC002C7640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C473041E18F8C9BC002C7640 /* CoreGraphics.framework in Frameworks */,
+				C473042018F8C9BC002C7640 /* UIKit.framework in Frameworks */,
+				C473041C18F8C9BC002C7640 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C473043918F8C9BC002C7640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C473043E18F8C9BC002C7640 /* XCTest.framework in Frameworks */,
+				C473044018F8C9BC002C7640 /* UIKit.framework in Frameworks */,
+				C473043F18F8C9BC002C7640 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C473040F18F8C9BC002C7640 = {
+			isa = PBXGroup;
+			children = (
+				C473042118F8C9BC002C7640 /* WordShuffler */,
+				C473044318F8C9BC002C7640 /* WordShufflerTests */,
+				C473041A18F8C9BC002C7640 /* Frameworks */,
+				C473041918F8C9BC002C7640 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C473041918F8C9BC002C7640 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C473041818F8C9BC002C7640 /* WordShuffler.app */,
+				C473043C18F8C9BC002C7640 /* WordShufflerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C473041A18F8C9BC002C7640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C473041B18F8C9BC002C7640 /* Foundation.framework */,
+				C473041D18F8C9BC002C7640 /* CoreGraphics.framework */,
+				C473041F18F8C9BC002C7640 /* UIKit.framework */,
+				C473043D18F8C9BC002C7640 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C473042118F8C9BC002C7640 /* WordShuffler */ = {
+			isa = PBXGroup;
+			children = (
+				C473042A18F8C9BC002C7640 /* AppDelegate.h */,
+				C473042B18F8C9BC002C7640 /* AppDelegate.m */,
+				C473042D18F8C9BC002C7640 /* Main_iPhone.storyboard */,
+				C473043018F8C9BC002C7640 /* Main_iPad.storyboard */,
+				C473043318F8C9BC002C7640 /* ViewController.h */,
+				C473043418F8C9BC002C7640 /* ViewController.m */,
+				C473043618F8C9BC002C7640 /* Images.xcassets */,
+				C473042218F8C9BC002C7640 /* Supporting Files */,
+			);
+			path = WordShuffler;
+			sourceTree = "<group>";
+		};
+		C473042218F8C9BC002C7640 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C473042318F8C9BC002C7640 /* WordShuffler-Info.plist */,
+				C473042418F8C9BC002C7640 /* InfoPlist.strings */,
+				C473042718F8C9BC002C7640 /* main.m */,
+				C473042918F8C9BC002C7640 /* WordShuffler-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C473044318F8C9BC002C7640 /* WordShufflerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C473044918F8C9BC002C7640 /* WordShufflerTests.m */,
+				C473044418F8C9BC002C7640 /* Supporting Files */,
+			);
+			path = WordShufflerTests;
+			sourceTree = "<group>";
+		};
+		C473044418F8C9BC002C7640 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C473044518F8C9BC002C7640 /* WordShufflerTests-Info.plist */,
+				C473044618F8C9BC002C7640 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C473041718F8C9BC002C7640 /* WordShuffler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C473044D18F8C9BC002C7640 /* Build configuration list for PBXNativeTarget "WordShuffler" */;
+			buildPhases = (
+				C473041418F8C9BC002C7640 /* Sources */,
+				C473041518F8C9BC002C7640 /* Frameworks */,
+				C473041618F8C9BC002C7640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordShuffler;
+			productName = WordShuffler;
+			productReference = C473041818F8C9BC002C7640 /* WordShuffler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C473043B18F8C9BC002C7640 /* WordShufflerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C473045018F8C9BC002C7640 /* Build configuration list for PBXNativeTarget "WordShufflerTests" */;
+			buildPhases = (
+				C473043818F8C9BC002C7640 /* Sources */,
+				C473043918F8C9BC002C7640 /* Frameworks */,
+				C473043A18F8C9BC002C7640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C473044218F8C9BC002C7640 /* PBXTargetDependency */,
+			);
+			name = WordShufflerTests;
+			productName = WordShufflerTests;
+			productReference = C473043C18F8C9BC002C7640 /* WordShufflerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C473041018F8C9BC002C7640 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Zhilin Jiang";
+				TargetAttributes = {
+					C473043B18F8C9BC002C7640 = {
+						TestTargetID = C473041718F8C9BC002C7640;
+					};
+				};
+			};
+			buildConfigurationList = C473041318F8C9BC002C7640 /* Build configuration list for PBXProject "WordShuffler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C473040F18F8C9BC002C7640;
+			productRefGroup = C473041918F8C9BC002C7640 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C473041718F8C9BC002C7640 /* WordShuffler */,
+				C473043B18F8C9BC002C7640 /* WordShufflerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C473041618F8C9BC002C7640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C473043218F8C9BC002C7640 /* Main_iPad.storyboard in Resources */,
+				C473043718F8C9BC002C7640 /* Images.xcassets in Resources */,
+				C473042F18F8C9BC002C7640 /* Main_iPhone.storyboard in Resources */,
+				C473042618F8C9BC002C7640 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C473043A18F8C9BC002C7640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C473044818F8C9BC002C7640 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C473041418F8C9BC002C7640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C473043518F8C9BC002C7640 /* ViewController.m in Sources */,
+				C473042C18F8C9BC002C7640 /* AppDelegate.m in Sources */,
+				C473042818F8C9BC002C7640 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C473043818F8C9BC002C7640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C473044A18F8C9BC002C7640 /* WordShufflerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C473044218F8C9BC002C7640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C473041718F8C9BC002C7640 /* WordShuffler */;
+			targetProxy = C473044118F8C9BC002C7640 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C473042418F8C9BC002C7640 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C473042518F8C9BC002C7640 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C473042D18F8C9BC002C7640 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C473042E18F8C9BC002C7640 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C473043018F8C9BC002C7640 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C473043118F8C9BC002C7640 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C473044618F8C9BC002C7640 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C473044718F8C9BC002C7640 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C473044B18F8C9BC002C7640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C473044C18F8C9BC002C7640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C473044E18F8C9BC002C7640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordShuffler/WordShuffler-Prefix.pch";
+				INFOPLIST_FILE = "WordShuffler/WordShuffler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C473044F18F8C9BC002C7640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordShuffler/WordShuffler-Prefix.pch";
+				INFOPLIST_FILE = "WordShuffler/WordShuffler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C473045118F8C9BC002C7640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WordShuffler.app/WordShuffler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordShuffler/WordShuffler-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WordShufflerTests/WordShufflerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C473045218F8C9BC002C7640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WordShuffler.app/WordShuffler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordShuffler/WordShuffler-Prefix.pch";
+				INFOPLIST_FILE = "WordShufflerTests/WordShufflerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C473041318F8C9BC002C7640 /* Build configuration list for PBXProject "WordShuffler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C473044B18F8C9BC002C7640 /* Debug */,
+				C473044C18F8C9BC002C7640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C473044D18F8C9BC002C7640 /* Build configuration list for PBXNativeTarget "WordShuffler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C473044E18F8C9BC002C7640 /* Debug */,
+				C473044F18F8C9BC002C7640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C473045018F8C9BC002C7640 /* Build configuration list for PBXNativeTarget "WordShufflerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C473045118F8C9BC002C7640 /* Debug */,
+				C473045218F8C9BC002C7640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C473041018F8C9BC002C7640 /* Project object */;
+}
