@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property(nonatomic, retain) UITextView *ori;
+@property (weak, nonatomic) IBOutlet UITextView *ori;
+
 
 
 @end
