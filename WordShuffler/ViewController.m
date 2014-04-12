@@ -91,6 +91,7 @@
     } else {
         [shuffled insertText:[ViewController shuffleWord:originalText]];
     }
+    [original resignFirstResponder];
 }
 
 @end
