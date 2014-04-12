@@ -28,7 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (*NSString)shuffleWord:(NSString *)word {
++ (NSString *)shuffleWord:(NSString *)word {
     if (word.length <=2) {
         return word;
     }
@@ -40,11 +40,10 @@
 
     NSString *originalText = original.text;
     originalText = original.text;
-    NSArray *listwords = [originalText componentsSeparatedByString:@" "];
+    NSMutableArray *listwords = [originalText componentsSeparatedByString:@" "];
     for (int i=0; i<listwords.count; i++) {
-        listwords[i] = shuffleWord(listwords[i]);
+        [listwords replaceObjectAtIndex:i withObject:[ViewController shuffleWord:[listwords objectAtIndex:i]]];
     }
-    NSString *encodedText;
     shuffled.text = originalText;
 }
 
