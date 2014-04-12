@@ -16,7 +16,6 @@
 @synthesize original;
 @synthesize shuffled;
 
-
 - (void)viewDidLoad{
     original.text = @"Original";
     original.textColor = [UIColor whiteColor];
@@ -24,7 +23,7 @@
     original.delegate = self;
     shuffled.text = @"Shuffled";
     shuffled.textColor = [UIColor whiteColor];
-    [shuffled setAlpha:0.5];
+    [shuffled setAlpha:0.4];
     shuffled.delegate = self;
     
 }
@@ -35,6 +34,7 @@
         original.text = @"";
         original.textColor = [UIColor whiteColor];
         [original setAlpha:1.0];
+        shuffled.text = @"";
         shuffled.textColor = [UIColor whiteColor];
         [shuffled setAlpha:1.0];
         return YES;
@@ -42,13 +42,16 @@
     return YES;
 }
 
+
 -(void) textViewDidChange:(UITextView *)textView
 {
-    
     if(original.text.length == 0){
         original.textColor = [UIColor whiteColor];
         [original setAlpha:0.4];
         original.text = @"Original";
+        shuffled.textColor = [UIColor whiteColor];
+        [shuffled setAlpha:0.4];
+        shuffled.text = @"Shuffled";
         [original resignFirstResponder];
     }
 }
@@ -102,6 +105,12 @@
     NSString *originalText = original.text;
     originalText = original.text;
     shuffled.text = @"";
+    
+    if (original.alpha != 1.0) {
+        [shuffled setAlpha:0.4];
+        shuffled.text = @"Shuffled";
+        return;
+    }
     
     NSCharacterSet *validChars = [NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"];
     NSCharacterSet *invalidChars = [validChars invertedSet];
