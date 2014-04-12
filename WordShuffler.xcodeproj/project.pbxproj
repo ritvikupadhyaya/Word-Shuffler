@@ -22,6 +22,7 @@
 		C473044018F8C9BC002C7640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473041F18F8C9BC002C7640 /* UIKit.framework */; };
 		C473044818F8C9BC002C7640 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C473044618F8C9BC002C7640 /* InfoPlist.strings */; };
 		C473044A18F8C9BC002C7640 /* WordShufflerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C473044918F8C9BC002C7640 /* WordShufflerTests.m */; };
+		C473045518F8DA05002C7640 /* TextBox.m in Sources */ = {isa = PBXBuildFile; fileRef = C473045418F8DA05002C7640 /* TextBox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		C473044518F8C9BC002C7640 /* WordShufflerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordShufflerTests-Info.plist"; sourceTree = "<group>"; };
 		C473044718F8C9BC002C7640 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C473044918F8C9BC002C7640 /* WordShufflerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordShufflerTests.m; sourceTree = "<group>"; };
+		C473045318F8DA05002C7640 /* TextBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextBox.h; path = ../TextBox.h; sourceTree = "<group>"; };
+		C473045418F8DA05002C7640 /* TextBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextBox.m; path = ../TextBox.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		C473042118F8C9BC002C7640 /* WordShuffler */ = {
 			isa = PBXGroup;
 			children = (
+				C473045318F8DA05002C7640 /* TextBox.h */,
+				C473045418F8DA05002C7640 /* TextBox.m */,
 				C473042A18F8C9BC002C7640 /* AppDelegate.h */,
 				C473042B18F8C9BC002C7640 /* AppDelegate.m */,
 				C473042D18F8C9BC002C7640 /* Main_iPhone.storyboard */,
@@ -255,6 +260,7 @@
 			files = (
 				C473043518F8C9BC002C7640 /* ViewController.m in Sources */,
 				C473042C18F8C9BC002C7640 /* AppDelegate.m in Sources */,
+				C473045518F8DA05002C7640 /* TextBox.m in Sources */,
 				C473042818F8C9BC002C7640 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
