@@ -88,6 +88,15 @@
     return result;
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [[event allTouches] anyObject];
+    if ([original isFirstResponder] && ([touch view]!= original)) {
+        [original resignFirstResponder];
+    }
+    [super touchesBegan:touches withEvent:event];
+}
+
 - (IBAction)enshuffle:(UIButton *)sender {
 
     NSString *originalText = original.text;
