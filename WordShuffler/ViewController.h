@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *ori;
-
+@property (weak, nonatomic) IBOutlet UITextView *original;
+@property (weak, nonatomic) IBOutlet UITextView *shuffled;
 
 
 @end
