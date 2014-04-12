@@ -28,7 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (*NSString)shuffleWord:(NSString *)word {
++ (NSString *)shuffleWord:(NSString *)word {
     if (word.length <=2) {
         return word;
     }
