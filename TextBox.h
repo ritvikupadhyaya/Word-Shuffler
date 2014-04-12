@@ -10,4 +10,6 @@
 
 @interface TextBox : NSObject
 
+@property NSString *Original;
+
 @end
