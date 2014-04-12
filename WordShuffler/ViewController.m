@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "IFTTTJazzHands.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 @synthesize shuffled;
 
 - (void)viewDidLoad{
+    self.animator = [IFTTTAnimator new];
+    IFTTTFrameAnimation *frameAnimation = [IFTTTFrameAnimation new];
+    frameAnimation.view = original;
+    [self.animator addAnimation:frameAnimation];
+    [frameAnimation addKeyFrame:[[IFTTTAnimationKeyFrame alloc] initWithTime:30 andFrame:CGRectMake(10, 10, 100, 100)]];
+    [frameAnimation addKeyFrame:[[IFTTTAnimationKeyFrame alloc] initWithTime:60 andFrame:CGRectMake(150, 10, 200, 200)]];
     original.text = @"Original";
     original.textColor = [UIColor lightGrayColor];
     original.delegate = self;
@@ -25,6 +32,11 @@
     shuffled.delegate = self;
     
 }
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self.animator animate:scrollView.contentOffset.x];
+}
+
 - (BOOL) textViewShouldBeginEditing:(UITextView *)textView
 {
     original.text = @"";

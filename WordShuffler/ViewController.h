@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IFTTTJazzHands.h"
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *original;
 @property (weak, nonatomic) IBOutlet UITextView *shuffled;
+@property (nonatomic, strong) IFTTTAnimator *animator;
+
 
 
 @end
