@@ -16,10 +16,31 @@
 @synthesize original;
 @synthesize shuffled;
 
-- (void)viewDidLoad
+- (void)viewDidLoad{
+    original.text = @"Original";
+    original.textColor = [UIColor lightGrayColor];
+    original.delegate = self;
+    shuffled.text = @"Shuffled";
+    shuffled.textColor = [UIColor lightGrayColor];
+    shuffled.delegate = self;
+    
+}
+- (BOOL) textViewShouldBeginEditing:(UITextView *)textView
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    original.text = @"";
+    original.textColor = [UIColor blackColor];
+    shuffled.textColor = [UIColor blackColor];
+    return YES;
+}
+
+-(void) textViewDidChange:(UITextView *)textView
+{
+    
+    if(original.text.length == 0){
+        original.textColor = [UIColor lightGrayColor];
+        original.text = @"Comment";
+        [original resignFirstResponder];
+    }
 }
 
 - (void)didReceiveMemoryWarning
