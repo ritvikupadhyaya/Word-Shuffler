@@ -27,6 +27,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (*NSString)shuffleWord:(NSString *)word {
+    if (word.length <=2) {
+        return word;
+    }
+    
+    return word;
+}
+
 - (IBAction)enshuffle:(UIButton *)sender {
     NSString *s = original.text;
     NSArray* foo = [s componentsSeparatedByString: @" "];
