@@ -16,10 +16,31 @@
 @synthesize original;
 @synthesize shuffled;
 
-- (void)viewDidLoad
+- (void)viewDidLoad{
+    original.text = @"Original";
+    original.textColor = [UIColor lightGrayColor];
+    original.delegate = self;
+    shuffled.text = @"Shuffled";
+    shuffled.textColor = [UIColor lightGrayColor];
+    shuffled.delegate = self;
+    
+}
+- (BOOL) textViewShouldBeginEditing:(UITextView *)textView
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    original.text = @"";
+    original.textColor = [UIColor blackColor];
+    shuffled.textColor = [UIColor blackColor];
+    return YES;
+}
+
+-(void) textViewDidChange:(UITextView *)textView
+{
+    
+    if(original.text.length == 0){
+        original.textColor = [UIColor lightGrayColor];
+        original.text = @"Comment";
+        [original resignFirstResponder];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,7 +62,7 @@
     NSString *originalText = original.text;
     originalText = original.text;
     NSMutableArray *listwords = [originalText componentsSeparatedByString:@" "];
-    for (int i=0; i<listwords.count; i++) {
+    for (int i=0; i< listwords.count; i++) {
         [listwords replaceObjectAtIndex:i withObject:[ViewController shuffleWord:[listwords objectAtIndex:i]]];
     }
     shuffled.text = originalText;
