@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize ori;
 
 - (void)viewDidLoad
 {
@@ -24,6 +25,9 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)enshuffle:(UIButton *)sender {
+ ori.text = @"This works";
 }
 
 @end

@@ -393,7 +393,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WordShuffler/WordShuffler-Prefix.pch";
 				INFOPLIST_FILE = "WordShuffler/WordShuffler-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,7 +408,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WordShuffler/WordShuffler-Prefix.pch";
 				INFOPLIST_FILE = "WordShuffler/WordShuffler-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -470,6 +474,7 @@
 				C473044F18F8C9BC002C7640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C473045018F8C9BC002C7640 /* Build configuration list for PBXNativeTarget "WordShufflerTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +483,7 @@
 				C473045218F8C9BC002C7640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
