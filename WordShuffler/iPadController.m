@@ -52,6 +52,7 @@
         [original resignFirstResponder];
     }
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -96,7 +97,8 @@
     [super touchesBegan:touches withEvent:event];
 }
 
-- (IBAction)enshuffle:(id)sender {
+- (IBAction)enshuffle:(UIButton *)sender {
+    
     NSString *originalText = original.text;
     originalText = original.text;
     shuffled.text = @"";
