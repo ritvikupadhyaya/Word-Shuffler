@@ -25,23 +25,26 @@
     [frameAnimation addKeyFrame:[[IFTTTAnimationKeyFrame alloc] initWithTime:30 andFrame:CGRectMake(10, 10, 100, 100)]];
     [frameAnimation addKeyFrame:[[IFTTTAnimationKeyFrame alloc] initWithTime:60 andFrame:CGRectMake(150, 10, 200, 200)]];
     original.text = @"Original";
-    original.textColor = [UIColor lightGrayColor];
+    original.textColor = [UIColor whiteColor];
+    [original setAlpha:0.4];
     original.delegate = self;
     shuffled.text = @"Shuffled";
-    shuffled.textColor = [UIColor lightGrayColor];
+    shuffled.textColor = [UIColor whiteColor];
+    [shuffled setAlpha:0.5];
     shuffled.delegate = self;
     
-}
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    [self.animator animate:scrollView.contentOffset.x];
 }
 
 - (BOOL) textViewShouldBeginEditing:(UITextView *)textView
 {
-    original.text = @"";
-    original.textColor = [UIColor blackColor];
-    shuffled.textColor = [UIColor blackColor];
+    if ([original.text  isEqual: @"Original"]) {
+        original.text = @"";
+        original.textColor = [UIColor whiteColor];
+        [original setAlpha:1.0];
+        shuffled.textColor = [UIColor whiteColor];
+        [shuffled setAlpha:1.0];
+        return YES;
+    }
     return YES;
 }
 
@@ -49,8 +52,9 @@
 {
     
     if(original.text.length == 0){
-        original.textColor = [UIColor lightGrayColor];
-        original.text = @"Comment";
+        original.textColor = [UIColor whiteColor];
+        [original setAlpha:0.4];
+        original.text = @"Original";
         [original resignFirstResponder];
     }
 }
