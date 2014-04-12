@@ -66,7 +66,7 @@
     
     NSMutableArray *listwords = [originalText componentsSeparatedByString:@" "];
     if (listwords.count > 1) {
-        for (int i=0; i<listwords.count; i++) {
+        for (int i=0; i < listwords.count; i++) {
             //shuffled.text = [listwords objectAtIndex:i];
             //[shuffled insertText:[NSString stringWithFormat: @"%d", listwords.count]];
             //NSString *shuffledWord = [ViewController shuffleWord:[listwords objectAtIndex:i]];
