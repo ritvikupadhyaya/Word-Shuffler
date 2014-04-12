@@ -37,10 +37,14 @@
 }
 
 - (IBAction)enshuffle:(UIButton *)sender {
-    NSString *s = original.text;
-    NSArray* foo = [s componentsSeparatedByString: @" "];
-    NSString *ret = [foo objectAtIndex:0];
-    shuffled.text = ret;
+
+    NSString *originalText = original.text;
+    originalText = original.text;
+    NSMutableArray *listwords = [originalText componentsSeparatedByString:@" "];
+    for (int i=0; i<listwords.count; i++) {
+        [listwords replaceObjectAtIndex:i withObject:[ViewController shuffleWord:[listwords objectAtIndex:i]]];
+    }
+    shuffled.text = originalText;
 }
 
 @end
