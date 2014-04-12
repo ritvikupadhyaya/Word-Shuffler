@@ -1,20 +1,29 @@
 //
-//  ViewController.m
+//  iPadController.m
 //  WordShuffler
 //
-//  Created by Jerry Jiang on 4/11/14.
+//  Created by Ritvik Upadhyaya on 12/04/14.
 //  Copyright (c) 2014 Zhilin Jiang. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "iPadController.h"
 
-@interface ViewController ()
+@interface iPadController ()
 
 @end
 
-@implementation ViewController
+@implementation iPadController
 @synthesize original;
 @synthesize shuffled;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad{
     original.text = @"Original";
@@ -53,13 +62,13 @@
     if (word.length <=2) {
         return word;
     }
-//    NSMutableString *result = [word characterAtIndex:0];
-  //  result
- return word;
+    //    NSMutableString *result = [word characterAtIndex:0];
+    //  result
+    return word;
 }
 
 - (IBAction)enshuffle:(UIButton *)sender {
-
+    
     NSString *originalText = original.text;
     originalText = original.text;
     shuffled.text = @"";
@@ -71,11 +80,11 @@
             //[shuffled insertText:[NSString stringWithFormat: @"%d", listwords.count]];
             //NSString *shuffledWord = [ViewController shuffleWord:[listwords objectAtIndex:i]];
             //[listwords replaceObjectAtIndex:i withObject:shuffledWord];
-            [shuffled insertText:[ViewController shuffleWord:[listwords objectAtIndex:i]]];
+            [shuffled insertText:[iPadController shuffleWord:[listwords objectAtIndex:i]]];
             [shuffled insertText:@" "];
         }
     } else {
-        [shuffled insertText:[ViewController shuffleWord:originalText]];
+        [shuffled insertText:[iPadController shuffleWord:originalText]];
     }
 }
 

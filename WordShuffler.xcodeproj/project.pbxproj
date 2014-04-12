@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F89D21D18F9056B00508C9F /* iPadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F89D21C18F9056B00508C9F /* iPadController.m */; };
 		C473041C18F8C9BC002C7640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473041B18F8C9BC002C7640 /* Foundation.framework */; };
 		C473041E18F8C9BC002C7640 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473041D18F8C9BC002C7640 /* CoreGraphics.framework */; };
 		C473042018F8C9BC002C7640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473041F18F8C9BC002C7640 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F89D21B18F9056B00508C9F /* iPadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadController.h; sourceTree = "<group>"; };
+		7F89D21C18F9056B00508C9F /* iPadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadController.m; sourceTree = "<group>"; };
 		C473041818F8C9BC002C7640 /* WordShuffler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordShuffler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C473041B18F8C9BC002C7640 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C473041D18F8C9BC002C7640 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +121,8 @@
 				C473042B18F8C9BC002C7640 /* AppDelegate.m */,
 				C473042D18F8C9BC002C7640 /* Main_iPhone.storyboard */,
 				C473043018F8C9BC002C7640 /* Main_iPad.storyboard */,
+				7F89D21B18F9056B00508C9F /* iPadController.h */,
+				7F89D21C18F9056B00508C9F /* iPadController.m */,
 				C473043318F8C9BC002C7640 /* ViewController.h */,
 				C473043418F8C9BC002C7640 /* ViewController.m */,
 				C473043618F8C9BC002C7640 /* Images.xcassets */,
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C473043518F8C9BC002C7640 /* ViewController.m in Sources */,
+				7F89D21D18F9056B00508C9F /* iPadController.m in Sources */,
 				C473042C18F8C9BC002C7640 /* AppDelegate.m in Sources */,
 				C473042818F8C9BC002C7640 /* main.m in Sources */,
 			);
