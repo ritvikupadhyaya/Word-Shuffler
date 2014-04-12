@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" text="Original" translatesAutoresizingMaskIntoConstraints="NO" id="eaV-BJ-stQ">
-                                <rect key="frame" x="20" y="103" width="728" height="331"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" text="Original" translatesAutoresizingMaskIntoConstraints="NO" id="eaV-BJ-stQ">
+                                <rect key="frame" x="20" y="103" width="728" height="370"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiJ-qH-nJn">
-                                <rect key="frame" x="0.0" y="442" width="768" height="135"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiJ-qH-nJn">
+                                <rect key="frame" x="0.0" y="481" width="768" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.074509803920000006" green="0.74117647060000003" blue="0.82352941180000006" alpha="0.65000000000000002" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -36,22 +36,37 @@
                                     <action selector="enshuffle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vIx-jz-2rT"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="Shuffled" translatesAutoresizingMaskIntoConstraints="NO" id="2mg-EK-oef">
-                                <rect key="frame" x="20" y="585" width="728" height="353"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="Shuffled" translatesAutoresizingMaskIntoConstraints="NO" id="2mg-EK-oef">
+                                <rect key="frame" x="20" y="634" width="728" height="370"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Word Shuffler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnm-bZ-hMP">
-                                <rect key="frame" x="234" y="20" width="300" height="75"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Word Shuffler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnm-bZ-hMP">
+                                <rect key="frame" x="20" y="20" width="728" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LiJ-qH-nJn" firstAttribute="top" secondItem="eaV-BJ-stQ" secondAttribute="bottom" constant="8" id="3Bn-7M-N4g"/>
+                            <constraint firstAttribute="bottom" secondItem="2mg-EK-oef" secondAttribute="bottom" constant="20" id="CZm-mn-CTK"/>
+                            <constraint firstAttribute="trailing" secondItem="LiJ-qH-nJn" secondAttribute="trailing" id="J3L-Y8-07Y"/>
+                            <constraint firstItem="2mg-EK-oef" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="U1S-CH-51I"/>
+                            <constraint firstAttribute="trailing" secondItem="2mg-EK-oef" secondAttribute="trailing" constant="20" id="WHY-d7-bTS"/>
+                            <constraint firstItem="2mg-EK-oef" firstAttribute="top" secondItem="LiJ-qH-nJn" secondAttribute="bottom" constant="8" id="Wb1-uA-WEt"/>
+                            <constraint firstItem="LiJ-qH-nJn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xuy-s0-D1v"/>
+                            <constraint firstItem="2mg-EK-oef" firstAttribute="height" secondItem="eaV-BJ-stQ" secondAttribute="height" id="aaH-Pi-zMl"/>
+                            <constraint firstAttribute="trailing" secondItem="eaV-BJ-stQ" secondAttribute="trailing" constant="20" id="b3S-Ad-cTo"/>
+                            <constraint firstItem="2mg-EK-oef" firstAttribute="width" secondItem="eaV-BJ-stQ" secondAttribute="width" id="cg1-M6-6jc"/>
+                            <constraint firstItem="eaV-BJ-stQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="miD-yx-iAH"/>
+                            <constraint firstItem="Wnm-bZ-hMP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="tlB-8B-hPz"/>
+                            <constraint firstAttribute="trailing" secondItem="Wnm-bZ-hMP" secondAttribute="trailing" constant="20" id="vdG-YL-X3Z"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="original" destination="eaV-BJ-stQ" id="Fa8-Rl-PHU"/>
