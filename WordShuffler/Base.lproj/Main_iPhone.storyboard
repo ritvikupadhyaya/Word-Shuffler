@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -17,24 +17,25 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Original" translatesAutoresizingMaskIntoConstraints="NO" id="hwn-8q-8BH">
-                                <rect key="frame" x="20" y="78" width="280" height="194"/>
+                                <rect key="frame" x="20" y="72" width="280" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Shuffled" translatesAutoresizingMaskIntoConstraints="NO" id="Xfi-pr-Kke">
-                                <rect key="frame" x="20" y="347" width="280" height="194"/>
+                                <rect key="frame" x="20" y="348" width="280" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROh-DW-WRO">
-                                <rect key="frame" x="-23" y="280" width="343" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROh-DW-WRO">
+                                <rect key="frame" x="0.0" y="280" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.074509803920000006" green="0.74117647060000003" blue="0.82352941180000006" alpha="0.65000000000000002" colorSpace="deviceRGB"/>
-                                <state key="normal" title="Enshuffle!">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Shuffle!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -43,34 +44,25 @@
                                     <action selector="selectAll:" destination="Xfi-pr-Kke" eventType="touchUpInside" id="IOK-tb-o9C"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Word Shuffler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H48-I3-CXD">
-                                <rect key="frame" x="20" y="20" width="280" height="70"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Word Shuffler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H48-I3-CXD">
+                                <rect key="frame" x="20" y="20" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="S6c-s8-0Np"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="H48-I3-CXD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="1sy-vX-UgW"/>
-                            <constraint firstItem="hwn-8q-8BH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="top" constant="98" id="CVr-GK-oSE"/>
-                            <constraint firstItem="hwn-8q-8BH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="98" id="HrI-wQ-YQc"/>
-                            <constraint firstItem="hwn-8q-8BH" firstAttribute="height" secondItem="Xfi-pr-Kke" secondAttribute="height" id="LdA-ex-xXT"/>
-                            <constraint firstItem="Xfi-pr-Kke" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Ose-On-t4N"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xfi-pr-Kke" secondAttribute="trailing" constant="20" id="Qrm-Dz-yCt"/>
-                            <constraint firstAttribute="trailing" secondItem="H48-I3-CXD" secondAttribute="trailing" constant="20" id="WGa-UR-9Qx"/>
-                            <constraint firstAttribute="bottom" secondItem="Xfi-pr-Kke" secondAttribute="bottom" constant="20" id="ZOe-l9-t9U"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Xfi-pr-Kke" secondAttribute="bottom" constant="20" id="bdV-9l-Wov"/>
-                            <constraint firstAttribute="trailing" secondItem="hwn-8q-8BH" secondAttribute="trailing" constant="20" id="eR1-Wb-zln"/>
-                            <constraint firstAttribute="trailing" secondItem="Xfi-pr-Kke" secondAttribute="trailing" constant="20" id="enH-jY-EWo"/>
-                            <constraint firstItem="hwn-8q-8BH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="gLe-Xx-vaI"/>
-                            <constraint firstItem="hwn-8q-8BH" firstAttribute="width" secondItem="Xfi-pr-Kke" secondAttribute="width" id="ukF-PG-psw"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hwn-8q-8BH" secondAttribute="trailing" constant="20" id="z2A-Ld-kbd"/>
+                            <constraint firstAttribute="trailing" secondItem="ROh-DW-WRO" secondAttribute="trailing" id="J0o-ZA-M66"/>
+                            <constraint firstItem="hwn-8q-8BH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="OQC-4L-stk"/>
+                            <constraint firstItem="hwn-8q-8BH" firstAttribute="width" secondItem="Xfi-pr-Kke" secondAttribute="width" id="QNW-BW-GE2"/>
+                            <constraint firstItem="hwn-8q-8BH" firstAttribute="height" secondItem="Xfi-pr-Kke" secondAttribute="height" id="T6N-b1-mWM"/>
+                            <constraint firstItem="Xfi-pr-Kke" firstAttribute="top" secondItem="ROh-DW-WRO" secondAttribute="bottom" constant="8" id="W2L-MR-8wq"/>
+                            <constraint firstAttribute="bottom" secondItem="Xfi-pr-Kke" secondAttribute="bottom" constant="20" id="Xxc-Ei-dEl"/>
+                            <constraint firstItem="ROh-DW-WRO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="len-vs-jwB"/>
+                            <constraint firstItem="ROh-DW-WRO" firstAttribute="top" secondItem="hwn-8q-8BH" secondAttribute="bottom" constant="8" id="r7Q-Qr-1Gf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XpL-Er-376"/>
