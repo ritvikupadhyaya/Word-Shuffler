@@ -13,7 +13,8 @@
 @end
 
 @implementation ViewController
-@synthesize ori;
+@synthesize original;
+@synthesize shuffled;
 
 - (void)viewDidLoad
 {
@@ -27,7 +28,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)enshuffle:(UIButton *)sender {
- ori.text = @"This works";
+ original.text = @"This works";
+    shuffled.text = original.text;
 }
 
 @end
