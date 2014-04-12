@@ -79,19 +79,27 @@
     originalText = original.text;
     shuffled.text = @"";
     
-    NSMutableArray *listwords = [originalText componentsSeparatedByString:@" "];
-    if (listwords.count > 1) {
-        for (int i=0; i < listwords.count; i++) {
-            //shuffled.text = [listwords objectAtIndex:i];
-            //[shuffled insertText:[NSString stringWithFormat: @"%d", listwords.count]];
-            //NSString *shuffledWord = [ViewController shuffleWord:[listwords objectAtIndex:i]];
-            //[listwords replaceObjectAtIndex:i withObject:shuffledWord];
-            [shuffled insertText:[iPadController shuffleWord:[listwords objectAtIndex:i]]];
-            [shuffled insertText:@" "];
+    NSCharacterSet *validChars = [NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+    NSCharacterSet *invalidChars = [validChars invertedSet];
+    
+    NSMutableString *tmpWord = @"";
+    for (int i=0; i< originalText.length; i++) {
+        unichar *singleChar = [originalText characterAtIndex:i];
+        if ([validChars characterIsMember:singleChar]) {
+            tmpWord = [tmpWord stringByAppendingString:[NSString stringWithFormat:@"%C",singleChar]];
+        } else {
+            if (tmpWord != @"") {
+                [shuffled insertText:[iPadController shuffleWord:tmpWord]];
+                tmpWord = @"";
+            }
+            [shuffled insertText:[NSString stringWithFormat:@"%C",singleChar]];
         }
-    } else {
-        [shuffled insertText:[iPadController shuffleWord:originalText]];
     }
+    if (tmpWord != @"") {
+        [shuffled insertText:[iPadController shuffleWord:tmpWord]];
+        tmpWord = @"";
+    }
+    [original resignFirstResponder];
 }
 
 @end
