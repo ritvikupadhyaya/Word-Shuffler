@@ -29,6 +29,9 @@
                                 <state key="normal" title="Enshuffle!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="enshuffle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vIx-jz-2rT"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="Shuffled" translatesAutoresizingMaskIntoConstraints="NO" id="2mg-EK-oef">
                                 <rect key="frame" x="20" y="585" width="728" height="353"/>
@@ -40,6 +43,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="original" destination="eaV-BJ-stQ" id="Fa8-Rl-PHU"/>
+                        <outlet property="shuffled" destination="2mg-EK-oef" id="7U0-TB-aCe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

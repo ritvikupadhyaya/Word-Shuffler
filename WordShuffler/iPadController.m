@@ -73,8 +73,8 @@
     return result;
 }
 
-- (IBAction)enshuffle:(UIButton *)sender {
-    
+
+- (IBAction)enshuffle:(id)sender {
     NSString *originalText = original.text;
     originalText = original.text;
     shuffled.text = @"";
