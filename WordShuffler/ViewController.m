@@ -32,19 +32,30 @@
     if (word.length <=2) {
         return word;
     }
-    
-    return word;
+    NSMutableString *result = [word characterAtIndex:0];
+    result
+    return result;
 }
 
 - (IBAction)enshuffle:(UIButton *)sender {
 
     NSString *originalText = original.text;
     originalText = original.text;
+    shuffled.text = @"";
+    
     NSMutableArray *listwords = [originalText componentsSeparatedByString:@" "];
-    for (int i=0; i<listwords.count; i++) {
-        [listwords replaceObjectAtIndex:i withObject:[ViewController shuffleWord:[listwords objectAtIndex:i]]];
+    if (listwords.count > 1) {
+        for (int i=0; i<listwords.count; i++) {
+            //shuffled.text = [listwords objectAtIndex:i];
+            //[shuffled insertText:[NSString stringWithFormat: @"%d", listwords.count]];
+            //NSString *shuffledWord = [ViewController shuffleWord:[listwords objectAtIndex:i]];
+            //[listwords replaceObjectAtIndex:i withObject:shuffledWord];
+            [shuffled insertText:[ViewController shuffleWord:[listwords objectAtIndex:i]]];
+            [shuffled insertText:@" "];
+        }
+    } else {
+        [shuffled insertText:[ViewController shuffleWord:originalText]];
     }
-    shuffled.text = originalText;
 }
 
 @end
