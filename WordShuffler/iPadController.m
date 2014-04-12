@@ -16,14 +16,6 @@
 @synthesize original;
 @synthesize shuffled;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad{
     original.text = @"Original";
@@ -62,9 +54,23 @@
     if (word.length <=2) {
         return word;
     }
-    //    NSMutableString *result = [word characterAtIndex:0];
-    //  result
-    return word;
+    NSMutableString *result = [NSString stringWithFormat:@"%C",[word characterAtIndex:0]];
+    BOOL picked[word.length];
+    for (int i=0;i < word.length;i++) {
+        picked[i] = NO;
+    }
+    picked[0] = YES;
+    picked[word.length-1] = YES;
+    int tmp=0;
+    for (int i=1;i < word.length-1;i++) {
+        while (picked[tmp]) {
+            tmp = arc4random() % (word.length-2) + 1;
+        }
+        result = [result stringByAppendingString:[NSString stringWithFormat:@"%C",[word characterAtIndex:tmp]]];
+        picked[tmp] = YES;
+    }
+    result = [result stringByAppendingString:[NSString stringWithFormat:@"%C",[word characterAtIndex:(word.length-1)]]];
+    return result;
 }
 
 - (IBAction)enshuffle:(UIButton *)sender {
@@ -75,7 +81,7 @@
     
     NSMutableArray *listwords = [originalText componentsSeparatedByString:@" "];
     if (listwords.count > 1) {
-        for (int i=0; i<listwords.count; i++) {
+        for (int i=0; i < listwords.count; i++) {
             //shuffled.text = [listwords objectAtIndex:i];
             //[shuffled insertText:[NSString stringWithFormat: @"%d", listwords.count]];
             //NSString *shuffledWord = [ViewController shuffleWord:[listwords objectAtIndex:i]];
