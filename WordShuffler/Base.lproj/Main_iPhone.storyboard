@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -16,22 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Original" translatesAutoresizingMaskIntoConstraints="NO" id="hwn-8q-8BH">
-                                <rect key="frame" x="20" y="72" width="280" height="200"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Original" translatesAutoresizingMaskIntoConstraints="NO" id="hwn-8q-8BH">
+                                <rect key="frame" x="20" y="72" width="280" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Shuffled" translatesAutoresizingMaskIntoConstraints="NO" id="Xfi-pr-Kke">
-                                <rect key="frame" x="20" y="340" width="280" height="185"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Shuffled" translatesAutoresizingMaskIntoConstraints="NO" id="Xfi-pr-Kke">
+                                <rect key="frame" x="20" y="330" width="280" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROh-DW-WRO">
-                                <rect key="frame" x="0.0" y="280" width="320" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROh-DW-WRO">
+                                <rect key="frame" x="0.0" y="270" width="320" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.074509803920000006" green="0.74117647060000003" blue="0.82352941180000006" alpha="0.65000000000000002" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -44,7 +44,7 @@
                                     <action selector="selectAll:" destination="Xfi-pr-Kke" eventType="touchUpInside" id="IOK-tb-o9C"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Word Shuffler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H48-I3-CXD">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Shuffler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H48-I3-CXD">
                                 <rect key="frame" x="20" y="20" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,10 +52,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOZ-1m-sQb">
-                                <rect key="frame" x="0.0" y="538" width="320" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOZ-1m-sQb">
+                                <rect key="frame" x="0.0" y="528" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.074509803920000006" green="0.74117647060000003" blue="0.82352941180000006" alpha="0.65000000000000002" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Email Shuffled">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,19 +68,26 @@
                         </subviews>
                         <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="H48-I3-CXD" secondAttribute="trailing" constant="20" id="1OK-Gh-JT5"/>
-                            <constraint firstItem="H48-I3-CXD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="7fM-C9-7r6"/>
-                            <constraint firstAttribute="trailing" secondItem="Xfi-pr-Kke" secondAttribute="trailing" constant="20" id="CGj-Sm-k5Y"/>
-                            <constraint firstAttribute="trailing" secondItem="ROh-DW-WRO" secondAttribute="trailing" id="J0o-ZA-M66"/>
-                            <constraint firstItem="hwn-8q-8BH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="OQC-4L-stk"/>
-                            <constraint firstItem="hwn-8q-8BH" firstAttribute="width" secondItem="Xfi-pr-Kke" secondAttribute="width" id="QNW-BW-GE2"/>
-                            <constraint firstItem="hwn-8q-8BH" firstAttribute="height" secondItem="Xfi-pr-Kke" secondAttribute="height" id="T6N-b1-mWM"/>
-                            <constraint firstAttribute="trailing" secondItem="hwn-8q-8BH" secondAttribute="trailing" constant="20" id="V92-Kg-uwf"/>
-                            <constraint firstItem="Xfi-pr-Kke" firstAttribute="top" secondItem="ROh-DW-WRO" secondAttribute="bottom" constant="8" id="W2L-MR-8wq"/>
-                            <constraint firstAttribute="bottom" secondItem="Xfi-pr-Kke" secondAttribute="bottom" constant="20" id="Xxc-Ei-dEl"/>
-                            <constraint firstItem="ROh-DW-WRO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="len-vs-jwB"/>
-                            <constraint firstItem="ROh-DW-WRO" firstAttribute="top" secondItem="hwn-8q-8BH" secondAttribute="bottom" constant="8" id="r7Q-Qr-1Gf"/>
-                            <constraint firstItem="Xfi-pr-Kke" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="sTw-Y9-bRi"/>
+                            <constraint firstItem="UOZ-1m-sQb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="1zt-81-TOr"/>
+                            <constraint firstItem="hwn-8q-8BH" firstAttribute="height" secondItem="Xfi-pr-Kke" secondAttribute="height" id="4vp-4u-BWd"/>
+                            <constraint firstItem="ROh-DW-WRO" firstAttribute="top" secondItem="hwn-8q-8BH" secondAttribute="bottom" constant="8" id="8LO-Lp-ZFc"/>
+                            <constraint firstItem="hwn-8q-8BH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="72" id="FfX-vX-80q"/>
+                            <constraint firstItem="hwn-8q-8BH" firstAttribute="top" secondItem="H48-I3-CXD" secondAttribute="bottom" constant="8" id="IXy-gh-AIl"/>
+                            <constraint firstAttribute="trailing" secondItem="ROh-DW-WRO" secondAttribute="trailing" id="LkN-ea-H14"/>
+                            <constraint firstAttribute="trailing" secondItem="hwn-8q-8BH" secondAttribute="trailing" constant="20" id="O0A-Ul-IvW"/>
+                            <constraint firstItem="ROh-DW-WRO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="STc-9C-aIh"/>
+                            <constraint firstAttribute="trailing" secondItem="UOZ-1m-sQb" secondAttribute="trailing" id="Y6H-xN-6XX"/>
+                            <constraint firstItem="Xfi-pr-Kke" firstAttribute="width" secondItem="hwn-8q-8BH" secondAttribute="width" id="YNL-cz-4pa"/>
+                            <constraint firstItem="H48-I3-CXD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Zjp-1k-6hc"/>
+                            <constraint firstAttribute="bottom" secondItem="UOZ-1m-sQb" secondAttribute="bottom" id="dxH-oD-K9l"/>
+                            <constraint firstItem="hwn-8q-8BH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="lEr-Fz-iJu"/>
+                            <constraint firstItem="Xfi-pr-Kke" firstAttribute="top" secondItem="ROh-DW-WRO" secondAttribute="bottom" constant="8" id="m5b-B7-VQm"/>
+                            <constraint firstItem="Xfi-pr-Kke" firstAttribute="width" secondItem="H48-I3-CXD" secondAttribute="width" id="rv3-JH-oK6"/>
+                            <constraint firstAttribute="trailing" secondItem="Xfi-pr-Kke" secondAttribute="trailing" constant="20" id="uA4-bj-VkE"/>
+                            <constraint firstItem="UOZ-1m-sQb" firstAttribute="top" secondItem="Xfi-pr-Kke" secondAttribute="bottom" constant="8" id="vuS-fC-etf"/>
+                            <constraint firstItem="Xfi-pr-Kke" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="wmp-Og-Lbx"/>
+                            <constraint firstItem="H48-I3-CXD" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="xuz-2V-4DA"/>
+                            <constraint firstAttribute="trailing" secondItem="H48-I3-CXD" secondAttribute="trailing" constant="20" id="yhz-v7-yny"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XpL-Er-376"/>
