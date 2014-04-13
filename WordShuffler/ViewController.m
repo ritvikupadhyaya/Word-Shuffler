@@ -157,7 +157,7 @@
     mc.mailComposeDelegate = self;
     [mc setSubject:emailTitle];
     [mc setMessageBody:body isHTML:NO];
-    [mc setToRecipients:toRecipents];
+   
     
     // Present mail view controller on screen
     [self presentViewController:mc animated:YES completion:NULL];
