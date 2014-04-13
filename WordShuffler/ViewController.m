@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Social/Social.h>
 
 @interface ViewController ()
 
@@ -145,7 +146,7 @@
     if([shuffled.text  isEqual: @"Shuffled"]){
         body = @"";
     }
-    body = [body stringByAppendingString:[NSString stringWithFormat:@"%@\r\n",@"\n\nSent via Word Shuffler"]];
+    body = [body stringByAppendingString:[NSString stringWithFormat:@"%@\r\n",@"\n\n\nConverted via Word Shuffler"]];
     // Email Subject
     NSString *emailTitle = @"";
     // Email Content
@@ -191,5 +192,23 @@
 
 - (IBAction)share:(id)sender {
     [self showEmail:sender];
+}
+
+- (IBAction)fb:(id)sender {
+    NSLog(@"Called");
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]){
+        SLComposeViewController *fbViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [fbViewController setInitialText:shuffled.text];
+        [fbViewController setCompletionHandler:^(SLComposeViewControllerResult result){
+            if (result == SLComposeViewControllerResultCancelled) {
+                NSLog(@"Do something");
+            }
+        }];
+        [self presentViewController:fbViewController animated:YES completion:nil];
+    }
+    else{
+        UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"facebook" message:@"NO support" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+        [view show];
+    }
 }
 @end

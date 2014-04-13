@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *shuffled;
 @property (nonatomic, strong) IFTTTAnimator *animator;
 - (IBAction)share:(id)sender;
+- (IBAction)fb:(id)sender;
 
 
 
