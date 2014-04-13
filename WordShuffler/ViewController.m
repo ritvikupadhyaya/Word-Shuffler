@@ -136,13 +136,16 @@
 
 - (IBAction)showEmail:(id)sender {
     NSString *body = shuffled.text;
+    if(shuffled.alpha == 0.4){
+        body = @"";
+    }
     body = [body stringByAppendingString:[NSString stringWithFormat:@"%@\r\n",@"\n\nSent via Word Shuffler"]];
     // Email Subject
     NSString *emailTitle = @"";
     // Email Content
     NSString *messageBody = shuffled.text;
     // To address
-    NSArray *toRecipents = [NSArray arrayWithObject:@"support@appcoda.com"];
+    NSArray *toRecipents = [NSArray arrayWithObject:@""];
     
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     mc.mailComposeDelegate = self;
