@@ -2,8 +2,8 @@
 //  ViewController.m
 //  WordShuffler
 //
-//  Created by Jerry Jiang on 4/11/14.
-//  Copyright (c) 2014 Zhilin Jiang. All rights reserved.
+//  Created by Ritvik Upadhyaya and Jerry Jiang on 4/11/14.
+//  Copyright (c) 2014 Ritvik Upadhyaya and Zhilin Jiang. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -134,4 +134,53 @@
     [original resignFirstResponder];
 }
 
+- (IBAction)showEmail:(id)sender {
+    NSString *body = shuffled.text;
+    body = [body stringByAppendingString:[NSString stringWithFormat:@"%@\r\n",@"\n\nSent via Word Shuffler"]];
+    // Email Subject
+    NSString *emailTitle = @"";
+    // Email Content
+    NSString *messageBody = shuffled.text;
+    // To address
+    NSArray *toRecipents = [NSArray arrayWithObject:@"support@appcoda.com"];
+    
+    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+    mc.mailComposeDelegate = self;
+    [mc setSubject:emailTitle];
+    [mc setMessageBody:body isHTML:NO];
+    [mc setToRecipients:toRecipents];
+    
+    // Present mail view controller on screen
+    [self presentViewController:mc animated:YES completion:NULL];
+    
+}
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail sent");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
+            break;
+        default:
+            break;
+    }
+    
+    // Close the Mail Interface
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+
+- (IBAction)share:(id)sender {
+    [self showEmail:sender];
+}
 @end

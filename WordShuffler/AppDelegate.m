@@ -2,10 +2,9 @@
 //  AppDelegate.m
 //  WordShuffler
 //
-//  Created by Jerry Jiang on 4/11/14.
-//  Copyright (c) 2014 Zhilin Jiang. All rights reserved.
+//  Created by Ritvik Upadhyaya and Jerry Jiang on 4/11/14.
+//  Copyright (c) 2014 Ritvik Upadhyaya and Zhilin Jiang. All rights reserved.
 //
-
 #import "AppDelegate.h"
 
 @implementation AppDelegate

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F6C901618FB0D180029B1F3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C901518FB0D180029B1F3 /* MessageUI.framework */; };
 		7F89D21D18F9056B00508C9F /* iPadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F89D21C18F9056B00508C9F /* iPadController.m */; };
 		7FBDB6EE18F9173300DB0135 /* IFTTTAlphaAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDB6D618F9173300DB0135 /* IFTTTAlphaAnimation.m */; };
 		7FBDB6EF18F9173300DB0135 /* IFTTTAngleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDB6D818F9173300DB0135 /* IFTTTAngleAnimation.m */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F6C901518FB0D180029B1F3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		7F89D21B18F9056B00508C9F /* iPadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadController.h; sourceTree = "<group>"; };
 		7F89D21C18F9056B00508C9F /* iPadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadController.m; sourceTree = "<group>"; };
 		7FBDB6D518F9173300DB0135 /* IFTTTAlphaAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTAlphaAnimation.h; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6C901618FB0D180029B1F3 /* MessageUI.framework in Frameworks */,
 				C473041E18F8C9BC002C7640 /* CoreGraphics.framework in Frameworks */,
 				C473042018F8C9BC002C7640 /* UIKit.framework in Frameworks */,
 				C473041C18F8C9BC002C7640 /* Foundation.framework in Frameworks */,
@@ -176,6 +179,7 @@
 		C473041A18F8C9BC002C7640 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F6C901518FB0D180029B1F3 /* MessageUI.framework */,
 				C473041B18F8C9BC002C7640 /* Foundation.framework */,
 				C473041D18F8C9BC002C7640 /* CoreGraphics.framework */,
 				C473041F18F8C9BC002C7640 /* UIKit.framework */,
