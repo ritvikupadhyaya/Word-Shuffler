@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -17,21 +17,21 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Original" translatesAutoresizingMaskIntoConstraints="NO" id="hwn-8q-8BH">
-                                <rect key="frame" x="20" y="72" width="280" height="190"/>
+                                <rect key="frame" x="20" y="72" width="282" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Shuffled" translatesAutoresizingMaskIntoConstraints="NO" id="Xfi-pr-Kke">
-                                <rect key="frame" x="20" y="330" width="280" height="190"/>
+                                <rect key="frame" x="20" y="330" width="282" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROh-DW-WRO">
-                                <rect key="frame" x="0.0" y="270" width="320" height="52"/>
+                                <rect key="frame" x="0.0" y="270" width="322" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.074509803920000006" green="0.74117647060000003" blue="0.82352941180000006" alpha="0.65000000000000002" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Shuffler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H48-I3-CXD">
-                                <rect key="frame" x="20" y="20" width="280" height="44"/>
+                                <rect key="frame" x="20" y="20" width="282" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -65,10 +65,11 @@
                                     <action selector="share:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L0a-fc-Sdb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcy-JT-Fzr">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcy-JT-Fzr">
                                 <rect key="frame" x="0.0" y="528" width="160" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.70588235290000001" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Facebook Shuffled">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -80,25 +81,29 @@
                         </subviews>
                         <color key="backgroundColor" red="0.2025563524" green="0.52234003179999999" blue="0.81923628829999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="UOZ-1m-sQb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="1zt-81-TOr"/>
+                            <constraint firstItem="Lcy-JT-Fzr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="2TZ-5t-7F4"/>
                             <constraint firstItem="hwn-8q-8BH" firstAttribute="height" secondItem="Xfi-pr-Kke" secondAttribute="height" id="4vp-4u-BWd"/>
                             <constraint firstItem="ROh-DW-WRO" firstAttribute="top" secondItem="hwn-8q-8BH" secondAttribute="bottom" constant="8" id="8LO-Lp-ZFc"/>
+                            <constraint firstAttribute="bottom" secondItem="Lcy-JT-Fzr" secondAttribute="bottom" id="A94-xF-Dy4"/>
                             <constraint firstItem="hwn-8q-8BH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="72" id="FfX-vX-80q"/>
                             <constraint firstItem="hwn-8q-8BH" firstAttribute="top" secondItem="H48-I3-CXD" secondAttribute="bottom" constant="8" id="IXy-gh-AIl"/>
                             <constraint firstAttribute="trailing" secondItem="ROh-DW-WRO" secondAttribute="trailing" id="LkN-ea-H14"/>
                             <constraint firstAttribute="trailing" secondItem="hwn-8q-8BH" secondAttribute="trailing" constant="20" id="O0A-Ul-IvW"/>
                             <constraint firstItem="ROh-DW-WRO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="STc-9C-aIh"/>
+                            <constraint firstItem="Lcy-JT-Fzr" firstAttribute="top" secondItem="Xfi-pr-Kke" secondAttribute="bottom" constant="8" id="Xfl-Jr-ivp"/>
                             <constraint firstAttribute="trailing" secondItem="UOZ-1m-sQb" secondAttribute="trailing" id="Y6H-xN-6XX"/>
                             <constraint firstItem="Xfi-pr-Kke" firstAttribute="width" secondItem="hwn-8q-8BH" secondAttribute="width" id="YNL-cz-4pa"/>
                             <constraint firstItem="H48-I3-CXD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Zjp-1k-6hc"/>
                             <constraint firstAttribute="bottom" secondItem="UOZ-1m-sQb" secondAttribute="bottom" id="dxH-oD-K9l"/>
                             <constraint firstItem="hwn-8q-8BH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="lEr-Fz-iJu"/>
                             <constraint firstItem="Xfi-pr-Kke" firstAttribute="top" secondItem="ROh-DW-WRO" secondAttribute="bottom" constant="8" id="m5b-B7-VQm"/>
+                            <constraint firstItem="UOZ-1m-sQb" firstAttribute="width" secondItem="Lcy-JT-Fzr" secondAttribute="width" id="npM-Yq-vai"/>
                             <constraint firstItem="Xfi-pr-Kke" firstAttribute="width" secondItem="H48-I3-CXD" secondAttribute="width" id="rv3-JH-oK6"/>
                             <constraint firstAttribute="trailing" secondItem="Xfi-pr-Kke" secondAttribute="trailing" constant="20" id="uA4-bj-VkE"/>
                             <constraint firstItem="UOZ-1m-sQb" firstAttribute="top" secondItem="Xfi-pr-Kke" secondAttribute="bottom" constant="8" id="vuS-fC-etf"/>
                             <constraint firstItem="Xfi-pr-Kke" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="wmp-Og-Lbx"/>
                             <constraint firstItem="H48-I3-CXD" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="xuz-2V-4DA"/>
+                            <constraint firstItem="UOZ-1m-sQb" firstAttribute="leading" secondItem="Lcy-JT-Fzr" secondAttribute="trailing" id="yEf-YK-RLW"/>
                             <constraint firstAttribute="trailing" secondItem="H48-I3-CXD" secondAttribute="trailing" constant="20" id="yhz-v7-yny"/>
                         </constraints>
                     </view>
