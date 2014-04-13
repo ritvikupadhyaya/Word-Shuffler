@@ -62,10 +62,16 @@
 }
 
 + (NSString *)shuffleWord:(NSString *)word {
-    if (word.length <=2) {
+    if (word.length <= 3) {
         return word;
     }
     NSMutableString *result = [NSString stringWithFormat:@"%C",[word characterAtIndex:0]];
+    if (word.length == 4) {
+        result = [result stringByAppendingString:[NSString stringWithFormat:@"%C",[word characterAtIndex:2]]];
+        result = [result stringByAppendingString:[NSString stringWithFormat:@"%C",[word characterAtIndex:1]] ];
+        result = [result stringByAppendingString:[NSString stringWithFormat:@"%C",[word characterAtIndex:3]] ];
+        return result;
+    }
     BOOL picked[word.length];
     for (int i=0;i < word.length;i++) {
         picked[i] = NO;
