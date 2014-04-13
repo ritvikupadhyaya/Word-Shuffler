@@ -142,7 +142,7 @@
 
 - (IBAction)showEmail:(id)sender {
     NSString *body = shuffled.text;
-    if(shuffled.alpha == 0.4){
+    if([shuffled.text  isEqual: @"Shuffled"]){
         body = @"";
     }
     body = [body stringByAppendingString:[NSString stringWithFormat:@"%@\r\n",@"\n\nSent via Word Shuffler"]];
